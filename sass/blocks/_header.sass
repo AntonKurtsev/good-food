@@ -28,19 +28,21 @@
         &--phone
             margin-right: 32px
         &::after
-            transition: 0.2s 
+            transition: 0.4s 
             position: absolute
             content: ""
             display: block
             bottom: -2px
-            left: 0
-            width: 100%
+            right: 0
+            width: 0
             height: 2px
             border-radius: 20px
             background-color: transparent
         &:hover
             &::after
                 background-color: #fff
+                width: 100%
+                left: 0
     &__icon
         margin-right: 8px
     &__button-group
@@ -59,7 +61,7 @@
         font-size: 18px
         line-height: 170%
         border: 2px solid #fff
-        transition: 0.2s
+        transition: 0.4s
         &:first-child
             margin-right: 10px
         &:hover

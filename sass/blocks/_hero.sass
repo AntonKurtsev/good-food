@@ -1,13 +1,15 @@
 .hero
     position: relative
+    height: 100vh
+    min-height: 830px
     &-wrapper
         background-color: #FFAB00   
         clip-path: ellipse(100% 100% at 50% 0%);
-        min-height: 433px
+        height: 433px
     &-socials
         position: absolute
         right: 28px
-        bottom: 112px
+        top: 282px
         display: flex
         flex-direction: column
         &__item
@@ -20,3 +22,15 @@
         left: 50%
         transform: translateX(-50%)
         top: 0
+    &-button
+        position: absolute
+        left: 50%
+        transform: translateX(-50%)
+        bottom: 0
+        &__img
+            position: relative
+        &__arrow
+            position: absolute
+            top: 50%
+            left: 50%
+            transform: translate(-50%, -50%)
