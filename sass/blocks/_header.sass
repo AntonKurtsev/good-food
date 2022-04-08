@@ -1,0 +1,66 @@
+.header
+    padding-top: 15px
+    background-color: #FFAB00
+    color: #FFFFFF
+    font-family: 'Roboto', sans-serif
+    font-weight: 700
+    font-size: 16px
+    line-height: 170%
+    &__menu
+        display: flex
+        align-items: center
+        justify-content: space-between
+    &__logo
+        width: 42px
+        height: 42px
+        border-radius: 50%
+        background-color: #fff
+    &__contacts
+        display: flex
+        align-items: center    
+    &__contact
+        position: relative
+        display: flex
+        align-items: center
+        min-height: 27px
+        &--phone
+            margin-right: 32px
+        &::after
+            transition: 0.2s 
+            position: absolute
+            content: ""
+            display: block
+            bottom: -2px
+            left: 0
+            width: 100%
+            height: 2px
+            border-radius: 20px
+            background-color: transparent
+        &:hover
+            &::after
+                background-color: #fff
+    &__icon
+        margin-right: 8px
+    &__button-group
+        display: flex
+        align-items: center
+    &__button
+        display: flex
+        align-items: center
+        padding: 6px 23px
+        background-color: #fff
+        border-radius: 100px
+        color: #FFAB00
+        font-family: 'Roboto', sans-serif
+        font-style: normal
+        font-weight: 700
+        font-size: 18px
+        line-height: 170%
+        border: 2px solid #fff
+        transition: 0.2s
+        &:first-child
+            margin-right: 10px
+        &:hover
+            transform: scale(1.05)
+    &-button__img
+        margin-right: 13px
