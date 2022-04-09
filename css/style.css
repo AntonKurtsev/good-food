@@ -41,6 +41,7 @@ ul, li {
 
 .container {
   max-width: 1140px;
+  width: 100%;
   margin: 0 auto;
   padding: 0 15px; }
 
@@ -338,3 +339,37 @@ ul, li {
       right: 100px;
       width: 144px;
       height: 79px; }
+
+.delivery {
+  position: relative; }
+  .delivery-container {
+    height: 100%; }
+  .delivery-wrapper {
+    min-height: 562px;
+    -webkit-clip-path: ellipse(100% 100% at 50% 100%);
+            clip-path: ellipse(100% 100% at 50% 100%);
+    background: radial-gradient(95.07% 139.28% at 50% -43.54%, #FFAB00 0%, #FFCD68 29.64%, #FFAB00 85.3%, #FFAB00 100%);
+    padding-top: 164px; }
+  .delivery__image-block {
+    position: absolute;
+    top: 15px;
+    right: 50%;
+    margin-top: -40px;
+    max-width: 540px;
+    z-index: 10; }
+  .delivery__info {
+    margin-top: -30px;
+    margin-left: auto;
+    max-width: 523px;
+    color: #FFFFFF; }
+  .delivery__title {
+    font-size: 32px;
+    line-height: 120%;
+    margin-bottom: 30px; }
+    .delivery__title--icon {
+      width: 30px;
+      height: 30px; }
+  .delivery__text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%; }
