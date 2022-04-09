@@ -7,13 +7,13 @@
     <title>Good&Food</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Ubuntu:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400;500;700&family=Ubuntu:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     
 
-    <section class="hero">
+    <div class="hero">
         <header class="header">
             <div class="container">
                 <div class="menu header__menu">
@@ -44,34 +44,123 @@
         <!-- /.header -->
         <div class="hero-wrapper">
             <div class="hero-socials">
-                <li class="hero-socials__list">
-                    <ul class="hero-socials__item">
+                <ul class="hero-socials__list">
+                    <li class="hero-socials__item">
                         <a href="#" class="hero-socials__link">
                         <img src="images/icons/instagram.svg" alt="instagram" class="hero-socials__icon">
                     </a>
-                    </ul>
-                    <ul class="hero-socials__item">
+                    </li>
+                    <li class="hero-socials__item">
                         <a href="#" class="hero-socials__link">
                         <img src="images/icons/vkontakte.svg" alt="vkontakte" class="hero-socials__icon">
                     </a>
-                    </ul>
-                    <ul class="hero-socials__item">
+                    </li>
+                    <li class="hero-socials__item">
                         <a href="#" class="hero-socials__link">
                         <img src="images/icons/facebook.svg" alt="facebook" class="hero-socials__icon">
                     </a>
-                    </ul>
-                </li>
+                    </li>
+                </ul>
             </div>
         </div>
         <div class="hero-image">
             <img src="images/iphone-1.png" alt="IPhone" class="hero__phone">
         </div>
-        <button class="hero-button">
+        <a href="#upload" class="hero-button">
             <img src="images/round-btn.png" alt="" class="hero-button__img">
             <img src="images/icons/arrow-icon.svg" alt="" class="hero-button__arrow">
-        </button>
-    </section>
+        </a>
+    </div>
     <!-- /.hero -->
+
+    <section class="upload" id="upload">
+        <div class="container">
+            <div class="upload-wrapper">
+                <img src="images/iphone-2.png" alt="IPhone" class="upload__img">
+                <div class="upload-info">
+                    <h1 class="upload__title section-title">
+                        <span class="upload__title--accent section-title--accent">Где </span>скачать
+                        <img src="images/rocket.png" alt="" class="upload-title--icon">
+                    </h1>
+                    <p class="upload__text">
+                        Скачивайте приложение и создавайте свое виртуальное кафе с электронным меню, доставкой и возможностью предзаказа Скачивайте приложение и создавайте свое виртуальное кафе с электронным меню, доставкой и возможностью предзаказа Скачивайте приложение и создавайте свое виртуальное кафе с электронным меню, доставкой и возможностью предзаказа 
+                    </p>
+                    <div class="upload__stores">
+                        <a href="" class="upload__link">
+                            <img src="images/google-play.png" alt="Google play" class="upload__link-img">
+                        </a>
+                        <a href="" class="upload__link">
+                            <img src="images/app-store.png" alt="App store" class="upload__link-img">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- /.upload-wrapper -->
+        </div>
+        <!-- /.container -->
+    </section>
+
+    <section class="favorite">
+        <div class="container">
+            <div class="favorite-wrapper">
+                <div class="favorite__info">
+                    <h2 class="favorite__title section-title">
+                        <span class="favorite__title--accent section-title--accent">вАШИ</span>
+                        <span class="favorite__title--common"> ЛЮБИМЫЕ</span>
+                        <img src="images/iphone-icon.png" alt="IPhone" class="favorite__title--icon">
+                        <span class="favorite__title--common"> РЕСТОРАНЫ онлайн</span>
+                    </h2>
+                    <p class="favorite__text">
+                        Скачивайте приложение и создавайте свое виртуальное кафе  с электронным меню, доставкой и возможностью предзаказа Скачивайте приложение и создавайте свое виртуальное кафе  с электронным меню, доставкой и возможностью предзаказа
+                    </p>
+                    <ul class="favorite__count-list">
+                        <li class="favorite__count-item">
+                            <span class="favorite__count-number">1740 +</span>
+                            <span class="favorite__count-text">Скачиваний</span>
+                        </li>
+                        <li class="favorite__count-item">
+                            <span class="favorite__count-number">12 +</span>
+                            <span class="favorite__count-text">Ресторанов</span>
+                        </li>
+                        <li class="favorite__count-item">
+                            <span class="favorite__count-number">ДО 90%</span>
+                            <span class="favorite__count-text">Cкидки</span>
+                        </li>
+                    </ul>
+                </div>
+                <img src="images/iphone-3.png" alt="IPhone" class="favorite-img">
+            </div>
+        </div>
+        <!-- /.container -->
+    </section>
+
+    <section class="platform">
+        <div class="container">
+            <div class="platform-wrapper">
+                <div class="platform__info">
+                    <h2 class="platform__title section-title">
+                        <span class="platform__title--accent section-title--accent">Единая платформа </span>
+                        <span class="platform__title--common section-title--common">ДЛЯ всей россии</span>
+                        <img src="images/earth.png" alt="Earth" class="platform__title-icon">
+                    </h2>
+                    <p class="platform__text">
+                        Скачивайте приложение и создавайте свое виртуальное кафе электронным меню, доставкой и возможностью предзаказа Скачивайте приложение и создавайте свое виртуальное кафе
+                        с электронным меню, доставкой и возможностью предзаказаСкачивайте приложение и создавайте свое виртуальное кафе
+                    </p>
+                </div>
+                <!-- /.platform__info -->
+                <div class="platform__map">
+                    <img src="images/map.png" alt="Map" class="platform__map-img">
+                    <img src="images/srimps.png" alt="Srimps" class="platform__icon platform__icon--srimps">
+                    <img src="images/chicken.png" alt="Chicken" class="platform__icon platform__icon--chicken">
+                    <img src="images/glasses.png" alt="Glasses" class="platform__icon platform__icon--glasses">
+                    <img src="images/cake.png" alt="Cake" class="platform__icon platform__icon--cake"></div>
+                <!-- /.platform__map -->
+            </div>
+            <!-- /.platform-wrapper -->
+        </div>
+        <!-- /.container -->
+    </section>
 
     <script src="js/main.js"></script>
 </body>

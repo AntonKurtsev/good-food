@@ -1,7 +1,8 @@
 html,
 body {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  font-family: 'Roboto', sans-serif; }
 
 *, *::after, *::before {
   -webkit-box-sizing: border-box;
@@ -43,11 +44,21 @@ ul, li {
   margin: 0 auto;
   padding: 0 15px; }
 
+.section-title {
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 700;
+  line-height: 120%;
+  letter-spacing: -0.03em;
+  text-transform: uppercase; }
+  .section-title--accent {
+    color: #FF9C01; }
+  .section-title--icon {
+    font-family: 'Playfair Display', serif; }
+
 .header {
   padding-top: 15px;
   background-color: #FFAB00;
   color: #FFFFFF;
-  font-family: 'Roboto', sans-serif;
   font-weight: 700;
   font-size: 16px;
   line-height: 170%; }
@@ -182,3 +193,148 @@ ul, li {
       left: 50%;
       -webkit-transform: translate(-50%, -50%);
               transform: translate(-50%, -50%); }
+
+.upload {
+  position: relative;
+  -webkit-clip-path: ellipse(100% 100% at 50% 0%);
+          clip-path: ellipse(100% 100% at 50% 0%);
+  padding-bottom: 118px;
+  z-index: 5;
+  background-color: #fff; }
+  .upload-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+  .upload-info {
+    max-width: 628px; }
+  .upload__title {
+    margin-bottom: 25px;
+    font-size: 42px; }
+    .upload__title--icon {
+      max-width: 30px;
+      max-height: 30px;
+      margin-left: 14px; }
+  .upload__text {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+    color: #768C9B;
+    margin-bottom: 73px; }
+  .upload__link-img:first-child {
+    margin-right: 23px; }
+
+.favorite {
+  position: relative;
+  margin-top: -100px;
+  padding: 190px 0 120px;
+  background: radial-gradient(95.07% 134.5% at 50% -42.05%, #513E63 0%, #282837 29.64%, #4D4793 85.3%, #9260A9 100%);
+  -webkit-clip-path: ellipse(100% 100% at 50% 0%);
+          clip-path: ellipse(100% 100% at 50% 0%);
+  z-index: -5; }
+  .favorite-wrapper {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+  .favorite__info {
+    -ms-flex-item-align: self-start;
+        -ms-grid-row-align: self-start;
+        align-self: self-start;
+    max-width: 50%;
+    color: #fff; }
+  .favorite__title {
+    max-width: 445px;
+    margin-bottom: 20px;
+    font-size: 32px; }
+    .favorite__title--icon {
+      width: 30px;
+      height: 30px; }
+  .favorite__text {
+    margin-bottom: 20px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%; }
+  .favorite__count-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start; }
+  .favorite__count-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-right: 49px; }
+  .favorite__count-number {
+    font-weight: 600;
+    font-size: 37px;
+    line-height: 43px; }
+  .favorite__count-text {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px; }
+  .favorite-img {
+    position: absolute;
+    right: 64px;
+    bottom: -130px;
+    z-index: 100; }
+
+.platform {
+  padding: 69px 0 74px; }
+  .platform-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+  .platform__info {
+    max-width: 445px; }
+  .platform__title {
+    max-width: 369px;
+    font-size: 32px;
+    line-height: 120%;
+    margin-bottom: 30px; }
+    .platform__title-icon {
+      width: 30px;
+      height: 30px; }
+  .platform__text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    color: #4E5C66; }
+  .platform__map {
+    position: relative; }
+  .platform__icon {
+    position: absolute; }
+    .platform__icon--srimps {
+      top: 86px;
+      left: 57px;
+      width: 109px;
+      height: 65px; }
+    .platform__icon--chicken {
+      left: 146px;
+      bottom: 80px;
+      width: 110px;
+      height: 65px; }
+    .platform__icon--glasses {
+      bottom: 50px;
+      right: 231px;
+      width: 132px;
+      height: 70px; }
+    .platform__icon--cake {
+      top: 90px;
+      right: 100px;
+      width: 144px;
+      height: 79px; }

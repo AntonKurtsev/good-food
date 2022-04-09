@@ -1,0 +1,47 @@
+.favorite
+    position: relative
+    margin-top: -100px
+    padding: 190px 0 120px
+    background: radial-gradient(95.07% 134.5% at 50% -42.05%, #513E63 0%, #282837 29.64%, #4D4793 85.3%, #9260A9 100%)
+    clip-path: ellipse(100% 100% at 50% 0%)
+    z-index: -5
+    &-wrapper
+        position: relative
+        display: flex
+    &__info
+        align-self: self-start
+        max-width: 50%
+        color: #fff
+    &__title
+        max-width: 445px
+        margin-bottom: 20px
+        font-size: 32px
+        &--icon
+            width: 30px
+            height: 30px
+    &__text
+        margin-bottom: 20px
+        font-weight: 400
+        font-size: 14px
+        line-height: 150%
+    &__count
+        &-list
+            display: flex
+            align-items: start
+        &-item
+            display: flex
+            flex-direction: column
+            margin-right: 49px
+        &-number
+            font-weight: 600
+            font-size: 37px
+            line-height: 43px
+        &-text
+            font-weight: 400
+            font-size: 18px
+            line-height: 21px
+    &-img
+        position: absolute
+        right: 64px
+        bottom: -130px
+        z-index: 100
