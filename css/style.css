@@ -53,8 +53,18 @@ ul, li {
   text-transform: uppercase; }
   .section-title--accent {
     color: #FF9C01; }
-  .section-title--icon {
-    font-family: 'Playfair Display', serif; }
+
+.swiper-pagination-bullet {
+  width: 17px;
+  height: 17px;
+  background-color: #fff;
+  opacity: 1;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s; }
+
+.swiper-pagination-bullet-active {
+  width: 128px;
+  border-radius: 99px; }
 
 .header {
   padding-top: 15px;
@@ -442,3 +452,93 @@ ul, li {
       font-size: 14px;
       line-height: 175%;
       display: none; }
+
+.rewievs {
+  position: relative; }
+  .rewievs::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 25px;
+    left: 0;
+    background: radial-gradient(95.07% 139.28% at 50% -43.54%, #513E63 0%, #282837 29.64%, #4D4793 85.3%, #9260A9 100%);
+    -webkit-clip-path: ellipse(100% 100% at 50% 0);
+            clip-path: ellipse(100% 100% at 50% 0);
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg); }
+  .rewievs::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/rewievs-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.1; }
+  .rewievs-wrapper {
+    position: relative;
+    z-index: 10;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end;
+    min-height: 550px; }
+  .rewievs__img {
+    position: absolute;
+    top: -45px;
+    left: 0;
+    width: 479px;
+    height: 551px; }
+  .rewievs__info {
+    max-width: 445px;
+    color: #FFFFFF; }
+  .rewievs__title {
+    font-size: 32px;
+    line-height: 98.9%;
+    margin-bottom: 20px; }
+    .rewievs__title--icon {
+      margin-left: 10px; }
+  .rewievs__text {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    margin-bottom: 20px; }
+  .rewievs-slider__wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    padding-top: 37px; }
+  .rewievs-slider__slide {
+    cursor: -webkit-grab;
+    cursor: grab; }
+  .rewievs-slider__pagination {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 17px;
+    text-align: left; }
+  .rewievs-slider__text {
+    font-family: 'Times New Roman';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    margin-bottom: 10px; }
+  .rewievs-slider__author {
+    display: block;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 150%;
+    text-align: right; }
