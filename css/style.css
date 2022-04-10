@@ -167,6 +167,16 @@ ul, li {
   position: relative;
   height: 100vh;
   min-height: 830px; }
+  .hero::after {
+    position: absolute;
+    content: '';
+    width: 89%;
+    height: 900px;
+    top: 62px;
+    left: 69px;
+    background-image: url(../images/header-balls.png);
+    background-repeat: no-repeat;
+    background-size: cover; }
   .hero-wrapper {
     background-color: #FFAB00;
     -webkit-clip-path: ellipse(100% 100% at 50% 0%);
@@ -201,7 +211,8 @@ ul, li {
     left: 50%;
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%);
-    bottom: 0; }
+    bottom: 0;
+    z-index: 5; }
     .hero-button__img {
       position: relative;
       width: 95px;
@@ -215,8 +226,7 @@ ul, li {
 
 .upload {
   position: relative;
-  z-index: 5;
-  background-color: #fff; }
+  z-index: 5; }
   .upload-wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -318,11 +328,10 @@ ul, li {
     line-height: 21px; }
   .favorite-img {
     position: absolute;
-    right: 64px;
+    right: -69px;
     bottom: -130px;
     width: 371px;
-    height: 637px;
-    z-index: 100; }
+    height: 637px; }
 
 .platform {
   padding: 69px 0 74px; }
@@ -378,10 +387,19 @@ ul, li {
 
 .delivery {
   position: relative; }
-  .delivery-container {
-    height: 100%; }
+  .delivery::after {
+    position: absolute;
+    content: '';
+    background-image: url(../images/delivery-balls.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 461px;
+    height: 648px;
+    top: -19px;
+    right: 12%;
+    z-index: 1; }
   .delivery-wrapper {
-    min-height: 582px;
+    min-height: 620px;
     -webkit-clip-path: ellipse(100% 100% at 50% 100%);
             clip-path: ellipse(100% 100% at 50% 100%);
     background: radial-gradient(95.07% 139.28% at 50% -43.54%, #FFAB00 0%, #FFCD68 29.64%, #FFAB00 85.3%, #FFAB00 100%);
@@ -531,6 +549,17 @@ ul, li {
         -ms-flex-pack: end;
             justify-content: end;
     min-height: 550px; }
+    .rewievs-wrapper::after {
+      position: absolute;
+      content: '';
+      top: -20px;
+      right: -80px;
+      width: 730px;
+      height: 605px;
+      background-image: url(../images/rewievs-balls.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+      z-index: 1; }
   .rewievs__image {
     width: 479px;
     height: 551px; }
@@ -555,36 +584,39 @@ ul, li {
     font-size: 14px;
     line-height: 150%;
     margin-bottom: 20px; }
-  .rewievs-slider__wrapper {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: start;
-    padding-top: 37px; }
-  .rewievs-slider__slide {
-    cursor: -webkit-grab;
-    cursor: grab; }
-  .rewievs-slider__pagination {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 17px;
-    text-align: left; }
-  .rewievs-slider__text {
-    font-family: 'Times New Roman';
-    font-style: italic;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 150%;
-    margin-bottom: 10px; }
-  .rewievs-slider__author {
-    display: block;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 150%;
-    text-align: right; }
+  .rewievs-slider {
+    position: relative;
+    z-index: 2; }
+    .rewievs-slider__wrapper {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: start;
+          -ms-flex-pack: start;
+              justify-content: start;
+      padding-top: 37px; }
+    .rewievs-slider__slide {
+      cursor: -webkit-grab;
+      cursor: grab; }
+    .rewievs-slider__pagination {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 17px;
+      text-align: left; }
+    .rewievs-slider__text {
+      font-family: 'Times New Roman';
+      font-style: italic;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 150%;
+      margin-bottom: 10px; }
+    .rewievs-slider__author {
+      display: block;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 150%;
+      text-align: right; }
 
 .contact {
   position: relative;
@@ -603,6 +635,16 @@ ul, li {
     -webkit-transform: rotate(180deg);
             transform: rotate(180deg);
     background-color: #fff; }
+  .contact::after {
+    position: absolute;
+    content: '';
+    right: 0;
+    top: -120px;
+    width: 653px;
+    height: 233px;
+    background-image: url(../images/contact-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover; }
   .contact-wrapper {
     position: relative;
     padding: 30px;

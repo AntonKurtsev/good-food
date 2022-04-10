@@ -28,6 +28,17 @@
         align-items: center
         justify-content: end
         min-height: 550px
+        &::after
+            position: absolute
+            content: ''
+            top: -20px
+            right: -80px
+            width: 730px
+            height: 605px
+            background-image: url(../images/rewievs-balls.png)
+            background-repeat: no-repeat
+            background-size: cover
+            z-index: 1
     &__image
         width: 479px
         height: 551px
@@ -53,6 +64,8 @@
         line-height: 150%
         margin-bottom: 20px
     &-slider
+        position: relative
+        z-index: 2
         &__wrapper
             display: flex
             justify-content: start

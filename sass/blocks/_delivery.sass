@@ -1,9 +1,18 @@
 .delivery
     position: relative
-    &-container
-        height: 100%
+    &::after
+        position: absolute
+        content: ''
+        background-image: url(../images/delivery-balls.png)
+        background-repeat: no-repeat
+        background-size: cover
+        width: 461px
+        height: 648px
+        top: -19px
+        right: 12%
+        z-index: 1
     &-wrapper
-        min-height: 582px
+        min-height: 620px
         clip-path: ellipse(100% 100% at 50% 100%)
         background: radial-gradient(95.07% 139.28% at 50% -43.54%, #FFAB00 0%, #FFCD68 29.64%, #FFAB00 85.3%, #FFAB00 100%)
         padding-top: 164px

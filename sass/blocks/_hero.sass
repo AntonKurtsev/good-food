@@ -2,6 +2,16 @@
     position: relative
     height: 100vh
     min-height: 830px
+    &::after
+        position: absolute
+        content: ''
+        width: 89%
+        height: 900px
+        top: 62px
+        left: 69px
+        background-image: url(../images/header-balls.png)
+        background-repeat: no-repeat
+        background-size: cover
     &-wrapper
         background-color: #FFAB00   
         clip-path: ellipse(100% 100% at 50% 0%)
@@ -30,6 +40,7 @@
         left: 50%
         transform: translateX(-50%)
         bottom: 0
+        z-index: 5
         &__img
             position: relative
             width: 95px
