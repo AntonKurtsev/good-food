@@ -1,0 +1,59 @@
+.faq
+    padding-top: 260px
+    padding-bottom 60px
+    clip-path: ellipse(100% 100% at 50% 100%)
+    margin-top: -140px
+    background-color: #fff
+    &-wrapper
+        display: flex
+        justify-content: space-between
+    &__info
+        padding-top: 200px
+    &__title
+        margin-bottom: 25px
+        max-width: 445px
+        font-size: 32px
+        line-height: 120%
+        color: #000000
+    &-image-block
+        width: 523px
+        height: 728px
+    &__img
+        width: 100%
+        height: auto
+    &-accordeon
+        width: 540px
+        &__item
+            color: #4E5C66
+        &__question
+            position: relative
+            padding: 5px 12px 5px 10px
+            background-color: #FFFFFF
+            box-shadow: 4px 4px 30px rgba(0, 0, 0, 0.1)
+            border-radius: 5px
+            margin-bottom: 5px
+            font-weight: 700
+            font-size: 16px
+            line-height: 170%
+            cursor: pointer
+            &::after
+                position: absolute
+                right: 12px
+                top: 50%
+                transform: translateY(-50%)
+                content: ''
+                width: 0
+                height: 0
+                border-top: 5px solid #F7620F
+                border-left: 5px solid transparent
+                border-right: 5px solid transparent
+                transition: all 0.5s
+            &--active.faq-accordeon__question::after
+                transform: rotateX(180deg)
+                transform-origin: center
+        &__answer
+            padding: 5px 10px 15px
+            font-weight: 400
+            font-size: 14px
+            line-height: 175%
+            display: none
