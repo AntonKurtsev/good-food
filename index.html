@@ -21,21 +21,21 @@
                     <a href="index.html" class="header__logo"></a>
                     <div class="header__contacts">
                         <a href="tel:+79770000000" class="header__contact header__contact--phone">
-                            <img src="images/icons/phone.png" alt="Phone number" class="phone__icon header__icon">
+                            <img src="images/icons/phone.svg" alt="Phone number" class="phone__icon header__icon">
                             <span class="phone__text">+7 977 000-00-00</span>
                         </a>
                         <a href="mailto:support@mail.ru" class="header__contact header__contact--email">
-                            <img src="images/icons/email.png" alt="E-mail adress" class="email__icon header__icon">
+                            <img src="images/icons/email.svg" alt="E-mail adress" class="email__icon header__icon">
                             <span class="email__text">support@mail.ru</span>
                         </a>
                     </div>
                     <div class="header__button-group">
                         <button class="header__button header-button">
-                            <img src="images/icons/door.png" alt="Log in" class="header-button__img">
+                            <img src="images/icons/door.svg" alt="Log in" class="header-button__img">
                             <span class="button__text">Войти</span>
                         </button>
                         <button class="header__button header-button">
-                            <img src="images/icons/account.png" alt="Became a member" class="header-button__img">
+                            <img src="images/icons/account.svg" alt="Became a member" class="header-button__img">
                             <span class="button__text">Стать партнером</span>
                         </button>
                     </div>
@@ -65,10 +65,18 @@
             </div>
         </div>
         <div class="hero-image">
-            <img src="images/iphone-1.png" alt="IPhone" class="hero__phone">
+            <picture>
+                <source media="(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)"
+                        srcset="images/iphone-1@2.png">
+                <img src="images/iphone-1.png" alt="IPhone" class="hero__phone">
+            </picture>
         </div>
         <a href="#upload" class="hero-button">
-            <img src="images/round-btn.png" alt="" class="hero-button__img">
+            <picture>
+                <source media="(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)"
+                        srcset="images/round-btn@2.png">
+                <img src="images/round-btn.png" alt="" class="hero-button__img">
+            </picture>
             <img src="images/icons/arrow-icon.svg" alt="" class="hero-button__arrow">
         </a>
     </div>
@@ -77,21 +85,38 @@
     <section class="upload" id="upload">
         <div class="container">
             <div class="upload-wrapper">
-                <img src="images/iphone-2.png" alt="IPhone" class="upload__img">
+                <picture>
+                    <source media="(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)"
+                            srcset="images/iphone-2@2.png">
+                    <img src="images/iphone-2.png" alt="IPhone" class="upload__img">
+                </picture>
                 <div class="upload-info">
                     <h1 class="upload__title section-title">
-                        <span class="upload__title--accent section-title--accent">Где </span>скачать
-                        <img src="images/rocket.png" alt="" class="upload-title--icon section-title--icon">
+                        <span class="upload__title--accent section-title--accent">Где </span>
+                        <span class="upload__title--common">скачать</span>
+                        <picture>
+                            <source media="(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)"
+                                    srcset="images/icons/rocket@2.png">
+                            <img src="images/icons/rocket.png" class="upload__title--icon section-title--icon" alt="Rocket">
+                        </picture>
                     </h1>
                     <p class="upload__text">
                         Скачивайте приложение и создавайте свое виртуальное кафе с электронным меню, доставкой и возможностью предзаказа Скачивайте приложение и создавайте свое виртуальное кафе с электронным меню, доставкой и возможностью предзаказа Скачивайте приложение и создавайте свое виртуальное кафе с электронным меню, доставкой и возможностью предзаказа 
                     </p>
                     <div class="upload__stores">
                         <a href="" class="upload__link">
-                            <img src="images/google-play.png" alt="Google play" class="upload__link-img">
+                            <picture>
+                                <source media="(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)"
+                                        srcset="images/google-play@2.png">
+                                <img src="images/google-play.png" alt="Google play" class="upload__link-img">
+                            </picture>
                         </a>
                         <a href="" class="upload__link">
-                            <img src="images/app-store.png" alt="App store" class="upload__link-img">
+                            <picture>
+                                <source media="(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)"
+                                        srcset="images/app-store@2.png">
+                                <img src="images/app-store.png" alt="App Store" class="upload__link-img">
+                            </picture>
                         </a>
                     </div>
                 </div>
@@ -108,7 +133,11 @@
                     <h2 class="favorite__title section-title">
                         <span class="favorite__title--accent section-title--accent">вАШИ</span>
                         <span class="favorite__title--common"> ЛЮБИМЫЕ</span>
-                        <img src="images/iphone-icon.png" alt="IPhone" class="favorite__title--icon section-title--icon">
+                        <picture>
+                            <source media="(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)"
+                                    srcset="images/icons/iphone-icon@2.png">
+                            <img src="images/icons/iphone-icon.png" alt="IPhone" class="favorite__title--icon section-title--icon">
+                        </picture>
                         <span class="favorite__title--common"> РЕСТОРАНЫ онлайн</span>
                     </h2>
                     <p class="favorite__text">
@@ -129,7 +158,11 @@
                         </li>
                     </ul>
                 </div>
+                <picture>
+                    <source media="(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)"
+                            srcset="images/iphone-3@2.png">
                 <img src="images/iphone-3.png" alt="IPhone" class="favorite-img">
+                </picture>
             </div>
         </div>
         <!-- /.container -->
@@ -142,7 +175,11 @@
                     <h2 class="platform__title section-title">
                         <span class="platform__title--accent section-title--accent">Единая платформа </span>
                         <span class="platform__title--common section-title--common">ДЛЯ всей россии</span>
-                        <img src="images/earth.png" alt="Earth" class="platform__title-icon section-title--icon">
+                        <picture>
+                            <source media="(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)"
+                                    srcset="images/icons/earth@2.png">
+                            <img src="images/icons/earth.png" alt="Earth" class="platform__title-icon section-title--icon">
+                        </picture>
                     </h2>
                     <p class="platform__text">
                         Скачивайте приложение и создавайте свое виртуальное кафе электронным меню, доставкой и возможностью предзаказа Скачивайте приложение и создавайте свое виртуальное кафе
@@ -151,11 +188,32 @@
                 </div>
                 <!-- /.platform__info -->
                 <div class="platform__map">
-                    <img src="images/map.png" alt="Map" class="platform__map-img">
-                    <img src="images/srimps.png" alt="Srimps" class="platform__icon platform__icon--srimps">
-                    <img src="images/chicken.png" alt="Chicken" class="platform__icon platform__icon--chicken">
-                    <img src="images/glasses.png" alt="Glasses" class="platform__icon platform__icon--glasses">
-                    <img src="images/cake.png" alt="Cake" class="platform__icon platform__icon--cake"></div>
+                    <picture>
+                        <source media="(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)"
+                                srcset="images/map@2.png">
+                        <img src="images/map.png" alt="Map" class="platform__map-img">
+                    </picture>
+                    <picture>
+                        <source media="(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)"
+                                srcset="images/srimps@2.png">
+                        <img src="images/srimps.png" alt="Srimps" class="platform__icon platform__icon--srimps">
+                    </picture>
+                    <picture>
+                        <source media="(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)"
+                                srcset="images/chicken@2.png">
+                        <img src="images/chicken.png" alt="Chicken" class="platform__icon platform__icon--chicken">
+                    </picture>
+                    <picture>
+                        <source media="(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)"
+                                srcset="images/glasses@2.png">
+                        <img src="images/glasses.png" alt="Glasses" class="platform__icon platform__icon--glasses">
+                    </picture>
+                    <picture>
+                        <source media="(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)"
+                                srcset="images/cake@2.png">
+                        <img src="images/cake.png" alt="Cake" class="platform__icon platform__icon--cake">
+                    </picture>
+                </div>
                 <!-- /.platform__map -->
             </div>
             <!-- /.platform-wrapper -->
@@ -165,7 +223,11 @@
 
     <section class="delivery">
         <div class="delivery__image-block">
-            <img class="delivery__image" src="images/delivery.png" alt="Delivery">
+            <picture>
+                <source media="(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)"
+                        srcset="images/delivery@2.png">
+                <img src="images/delivery.png" class="delivery__image" alt="Delivery">
+            </picture>
         </div>
         <!-- /.delivery__image -->
         <div class="delivery-wrapper">
@@ -173,7 +235,11 @@
                 <div class="delivery__info">
                     <h2 class="delivery__title section-title">
                         <span class="delivery__title--common">у нАС ЕСТЬ ДОСТАВКА</span>
-                        <img src="images/icons/helicopter.png" alt="Helicopter" class="delivery__title--icon section-title--icon">
+                        <picture>
+                            <source media="(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)"
+                                    srcset="images/icons/helicopter@2.png">
+                            <img src="images/icons/helicopter.png" alt="Helicopter" class="delivery__title--icon section-title--icon">
+                        </picture>
                     </h2>
                     <p class="delivery__text">
                         Скачивайте приложение и создавайте свое виртуальное кафе
@@ -194,7 +260,11 @@
                     <h2 class="faq__title section-title">
                         <span class="faq__title--common section-title--common">Часто задаваемые</span>
                         <span class="faq__title--accent section-title--accent"> вопросы</span>
-                        <img src="images/icons/cookie.png" alt="Cookie" class="faq__title--icon section-title--icon">
+                        <picture>
+                            <source media="(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)"
+                                    srcset="images/icons/cookie@2.png">
+                            <img src="images/icons/cookie.png" alt="Cookie" class="faq__title--icon section-title--icon">
+                        </picture>
                     </h2>
                     <div class="faq-accordeon">
                         <div class="faq-accordeon__item">
@@ -257,7 +327,11 @@
                 </div>
                 <!-- /.faq__info -->
                 <div class="faq-image-block">
-                    <img src="images/cock.png" alt="" class="faq__img">
+                    <picture>
+                        <source media="(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)"
+                                srcset="images/cock@2.png">
+                        <img src="images/cock.png" alt="" class="faq__img">
+                    </picture>
                 </div>
                 <!-- /.faq-image-block -->
             </div>
@@ -269,13 +343,21 @@
     <section class="rewievs">
         <div class="container">
             <div class="rewievs-wrapper">
-                <div class="rewievs__img">
-                    <img src="images/iphone-4.png" alt="IPhone" class="rewievs__phone">
+                <div class="rewievs__image-block">
+                    <picture>
+                        <source media="(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)"
+                                srcset="images/iphone-4@2.png">
+                        <img src="images/iphone-4.png" alt="IPhone" class="rewievs__image">
+                    </picture>
                 </div>
                 <div class="rewievs__info">
                     <h2 class="rewievs__title section-title">
                         <span class="rewievs__title--common section-title">отзывы</span>
-                        <img src="images/icons/star.png" alt="Star" class="rewievs__title--icon section-title--icon">
+                        <picture>
+                            <source media="(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)"
+                                    srcset="images/icons/star@2.png">
+                            <img src="images/icons/star.png" alt="Star" class="rewievs__title--icon section-title--icon">
+                        </picture>
                     </h2>
                     <p class="rewievs__text">
                         Скачивайте приложение и создавайте свое виртуальное афеэлектронным меню, доставкой и возможностью предзаказа:
@@ -318,7 +400,11 @@
             <div class="contact-wrapper">
                 <h2 class="contact__title section-title">
                     <span class="contact__title--common">Связаться с нами</span>
-                    <img src="images/icons/heart.png" alt="Heart" class="contact__title--icon section-title--icon">
+                    <picture>
+                        <source media="(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)"
+                                srcset="images/icons/heart@2.png">
+                        <img src="images/icons/heart.png" alt="Heart" class="contact__title--icon section-title--icon">
+                    </picture>
                 </h2>
                 <p class="contact__text">Вы можете связаться с нами  по любому вопросу</p>
                 <form action="#" class="contact-form">
@@ -338,7 +424,11 @@
         <div class="container">
             <div class="footer-wrapper">
                 <a href="index.html" class="footer__logo-link">
-                    <img src="images/icons/logo.png" alt="Logo" class="footer__logo logo">
+                    <picture>
+                        <source media="(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)"
+                                srcset="images/logo@2.png">
+                        <img src="images/logo.png" alt="Logo" class="footer__logo logo">
+                    </picture>
                 </a>
                 <div class="footer__contacts">
                     <a href="tel:+79770000000" class="footer__phone">+7 977 000-00-00</a>
