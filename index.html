@@ -31,7 +31,11 @@
                     </div>
                     <div class="header__button-group">
                         <button class="header__button header-button">
-                            <img src="images/icons/door.svg" alt="Log in" class="header-button__img">
+                            <picture>
+                                <source media="(max-width: 1360px)"
+                                        srcset="images/icons/door-white.svg">
+                                <img src="images/icons/door.svg" alt="Door" class="header-button__img">
+                            </picture>
                             <span class="button__text">Войти</span>
                         </button>
                         <button class="header__button header-button">
@@ -178,7 +182,7 @@
                         <picture>
                             <source media="(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)"
                                     srcset="images/icons/earth@2.png">
-                            <img src="images/icons/earth.png" alt="Earth" class="platform__title-icon section-title--icon">
+                            <img src="images/icons/earth.png" alt="Earth" class="platform__title--icon section-title--icon">
                         </picture>
                     </h2>
                     <p class="platform__text">
@@ -412,7 +416,7 @@
                     <input type="tel" class="contact-form__input" placeholder="Телефон">
                     <input type="email" class="contact-form__input" placeholder="E-mail">
                     <button class="contact-form__btn">Отправить</button>
-                    <p class="contact-form__text">Нажимая на кнопку “Отправить” вы соглашаетесь с  политикой конфиденциальности</p>
+                    <p class="contact-form__text">Нажимая на кнопку “Отправить” вы соглашаетесь с <a class="contact-form__link" href="#">политикой конфиденциальности</a></p>
                 </form>
             </div>
             <!-- /.contact-wrapper -->
