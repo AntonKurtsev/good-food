@@ -1,0 +1,52 @@
+@media (max-width: 576px)
+    *, *::after, *::before
+        clip-path: none
+    .container
+        max-width: 95%
+    .header
+        &-logo
+            flex-basis: 20% 
+        &__contacts
+            display: flex
+            align-items: center
+            justify-content: space-around
+            flex-basis: 40%
+            margin: 0
+        &__contact
+            margin: 0
+        &__button
+            background-color: transparent
+            border: none
+            padding: 0
+            &>span
+                display: none
+            &-group
+                display: flex
+                align-items: center
+                justify-content: space-around
+                flex-basis: 40%
+                margin: 0
+    .hero
+        height: 100%
+        &-wrapper
+            clip-path: none
+        &::after
+            display: none
+    .upload
+        &__img
+            display: none
+        &__info
+            font-size: 13px
+    .favorite
+        clip-path: none
+        &-wrapper
+            flex-direction: column-reverse
+            justify-content: center
+        &::before
+            display: none
+        &-img
+            position: relative
+            right: 0
+            top: 0
+            bottom: 0
+            transform: translateX(0)
