@@ -39,7 +39,11 @@
                             <span class="button__text">Войти</span>
                         </button>
                         <button class="header__button header-button">
-                            <img src="images/icons/account.svg" alt="Became a member" class="header-button__img">
+                            <picture>
+                                <source media="(max-width: 576px)"
+                                        srcset="images/icons/account-white.svg">
+                                <img src="images/icons/account.svg" alt="Became a member" class="header-button__img">
+                            </picture>
                             <span class="button__text">Стать партнером</span>
                         </button>
                     </div>
@@ -435,8 +439,8 @@
                     </picture>
                 </a>
                 <div class="footer__contacts">
-                    <a href="tel:+79770000000" class="footer__phone">+7 977 000-00-00</a>
-                    <a href="mailto:support@mail.ru" class="footer__email">support@mail.ru</a>
+                    <a href="tel:+79770000000" class="footer__phone"><span>+7 977 000-00-00</span></a>
+                    <a href="mailto:support@mail.ru" class="footer__email"><span>support@mail.ru</span></a>
                 </div>
                 <button class="footer__btn">Войти</button>
             </div>

@@ -1,0 +1,84 @@
+@media (max-width: 768px)
+    .container
+        max-width: 570px
+    .hero
+        min-height: 0
+        &-wrapper
+            height: 330px
+        &::after
+            width: 540px
+            height: 285px
+        &-image
+            top: 85px
+            &::after
+                position: absolute
+                content: ''
+                bottom: 65px
+                left: 0
+                width: 100%
+                height: 100%
+                background: linear-gradient(180deg, rgba(255, 171, 0, 0) 85.42%, #FFAB00 100%)
+        &__phone
+            position: relative
+            width: 254px
+            height: 362px
+        &-button
+            display: none
+        &-socials
+            top: 50%
+            transform: translateY(-50%)
+    .upload
+        &-info
+            max-width: 350px
+    .favorite
+        padding-top: 90px
+        &__info
+            max-width: 350px
+        &-img
+            width: 160px
+            height: 338px
+            bottom: 5px
+        &__title
+            font-size: 16px
+            >span
+                margin-right: 2px
+        &__text
+            font-size: 14px
+        &__count
+            &-number
+                font-size: 16px
+            &-text
+                font-size: 14px
+    .delivery
+        &::after
+            right: -13px
+        &__info
+            max-width: 350px
+        &__title
+            font-size: 16px
+        &__text
+            font-size: 14px
+        &__image-block
+            top: 10%
+            right: 65%
+    .contact
+        &-wrapper
+            padding: 8px 30px
+            width: 540px
+            top: -100px
+        &__title
+            font-size: 16px
+        &__text
+            font-size: 14px
+        &-form
+            &__input
+                flex-basis: 100%
+            &__btn
+                flex-basis: 100%
+            &__text
+                font-size: 12px
+    .footer
+        &-wrapper
+            align-items: start
+        &__phone>span, &__email>span
+            display: none
